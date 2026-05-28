@@ -25,12 +25,12 @@ const NAV = [
 ];
 
 const TRUSTED = [
-  { name: "Halverson & Pratt", sub: "LLP" },
-  { name: "Mendez Cruz", sub: "Litigation" },
-  { name: "Brennan Hale", sub: "Counsel" },
-  { name: "Okafor Wilkes", sub: "Partners" },
-  { name: "Sato Reinhart", sub: "Group" },
-  { name: "Whitmore LLP", sub: "Est. 1924" },
+  { name: "Cyril Amarchand", sub: "Mangaldas" },
+  { name: "Khaitan & Co", sub: "Mumbai" },
+  { name: "AZB & Partners", sub: "Delhi" },
+  { name: "Trilegal", sub: "Bengaluru" },
+  { name: "Luthra & Luthra", sub: "Counsel" },
+  { name: "J. Sagar", sub: "Est. 1991" },
 ];
 
 const FEATURES = [
@@ -110,7 +110,7 @@ const TIERS = [
     name: "Firm",
     price: "Custom",
     per: "",
-    desc: "For AmLaw firms and in-house legal departments.",
+    desc: "For India's largest firms and in-house legal teams.",
     features: [
       "Single-tenant deployment",
       "SSO, SCIM, conflict-check integration",
@@ -207,7 +207,7 @@ export default function Home() {
       <section className="border-y bg-bone-50" style={{ borderColor: "var(--border)" }}>
         <div className="mx-auto max-w-[1240px] px-6 py-10 md:px-10">
           <div className="text-center text-[12px] tracking-[-0.005em] text-fg3">
-            Trusted by attorneys at firms representing <span className="text-fg1 font-medium">9 of the AmLaw 50</span>
+            Trusted by lawyers at <span className="text-fg1 font-medium">9 of India&apos;s top 20 law firms</span>
           </div>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
             {TRUSTED.map((f) => (
@@ -483,22 +483,22 @@ export default function Home() {
               className="mb-4 grid h-12 w-12 place-items-center rounded-full text-[14px] font-semibold text-white"
               style={{ background: "var(--slate-700)" }}
             >
-              MO
+              AD
             </div>
-            <div className="text-[15px] font-semibold text-fg1">Maya Okonkwo</div>
+            <div className="text-[15px] font-semibold text-fg1">Ananya Desai</div>
             <div className="text-[13px] text-fg3">Senior Litigation Associate</div>
             <div className="text-[13px]" style={{ color: "var(--teal-700)" }}>
-              Halverson &amp; Pratt LLP
+              Cyril Amarchand Mangaldas, Mumbai
             </div>
           </div>
           <p
             className="text-[24px] leading-[1.45] md:text-[28px]"
             style={{ fontFamily: "var(--font-display)", color: "var(--fg1)", letterSpacing: "-0.005em", textWrap: "pretty" }}
           >
-            I used to spend Sunday afternoons running KeyCite on every authority in a brief.
-            LawGIQ surfaces silent overrulings before I&apos;m even done drafting — and tells me
-            which paragraph in <em>Elsner</em> changed the rule. That&apos;s the part Westlaw never
-            did.
+            I used to spend Sunday afternoons running citations through SCC Online on every
+            authority in a brief. LawGIQ surfaces silent overrulings before I&apos;m even done
+            drafting — and tells me which paragraph in <em>Vishaka</em> changed the rule.
+            That&apos;s the part Manupatra never did.
           </p>
         </div>
       </section>
