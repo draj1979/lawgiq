@@ -26,7 +26,7 @@ export function ResearchResult() {
           className="ml-3 text-[11px] tracking-[-0.01em] text-fg3"
           style={{ fontFamily: "var(--font-mono)" }}
         >
-          app.lawgiq.com/m/smith-v-jones
+          app.lawgiq.com/m/jacob-mathew
         </span>
       </div>
 
@@ -50,13 +50,13 @@ export function ResearchResult() {
           className="mb-3 text-[19px] leading-[1.3] tracking-[-0.01em]"
           style={{ fontFamily: "var(--font-sans)", fontWeight: 600, color: "var(--fg1)" }}
         >
-          California recognizes negligence per se for OSHA violations — with limits.
+          Criminal liability for medical negligence requires gross negligence — not mere error.
         </h3>
 
         <p className="mb-5 text-[14px] leading-[1.55] text-fg2">
-          Under <span className="cite-chip">Cal. Civ. Code § 1714(a)</span> every person owes a
-          duty of ordinary care. The doctrine permits a presumption of negligence where a
-          statute is violated and the plaintiff is within the protected class.
+          Under <span className="cite-chip">S. 304A IPC</span> a doctor is criminally liable only
+          where the negligence is gross or reckless. A simple lack of care or an error of judgment
+          is not enough — the Bolam standard applies.
         </p>
 
         {/* Authority rows */}
@@ -66,20 +66,20 @@ export function ResearchResult() {
         >
           <AuthorityRow
             n="01"
-            title="Elsner v. Uveges"
-            cite="34 Cal. 4th 915"
+            title="Jacob Mathew v. State of Punjab"
+            cite="(2005) 6 SCC 1"
             status="good"
           />
           <AuthorityRow
             n="02"
-            title="Spencer v. MacDonald"
-            cite="63 Cal. App. 3d 836"
+            title="Poonam Verma v. Ashwin Patel"
+            cite="(1996) 4 SCC 332"
             status="distinguished"
           />
           <AuthorityRow
             n="03"
-            title="Wilson v. Marek"
-            cite="2021 Cal. App."
+            title="Kusum Sharma v. Batra Hospital"
+            cite="(2010) 3 SCC 480"
             status="narrowed"
           />
         </div>

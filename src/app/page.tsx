@@ -42,11 +42,11 @@ const FEATURES = [
   {
     n: "02 — Drafting",
     title: "Briefs and memos that already cite themselves.",
-    body: "Generate sections in your firm's house style. Every assertion carries a citation, every citation carries a Shepard-style currency check. Edit inline, regenerate the surrounding paragraph without losing the rest.",
+    body: "Generate sections in your firm's house style. Every assertion carries a citation, every citation carries a currency check against later judgments. Edit inline, regenerate the surrounding paragraph without losing the rest.",
   },
   {
     n: "03 — Verification",
-    title: "Catches what KeyCite and Shepard's miss.",
+    title: "Catches what a citator's flags miss.",
     body: "Every cite in your draft is checked against the full text of subsequent decisions — not just headnote signals. Distinctions, narrowings, and silent overrulings flagged inline.",
   },
 ];
@@ -60,7 +60,7 @@ const DETAIL_ITEMS = [
   {
     Icon: Filter,
     title: "Jurisdiction-aware",
-    body: "Filter by federal circuit, state, or court level. LawGIQ knows the difference between persuasive and binding.",
+    body: "Filter by the Supreme Court, any High Court, or tribunal. LawGIQ knows the difference between persuasive and binding precedent.",
   },
   {
     Icon: Settings,
@@ -77,12 +77,12 @@ const DETAIL_ITEMS = [
 const TIERS = [
   {
     name: "Solo",
-    price: "$149",
-    per: "/ attorney / mo",
-    desc: "For solo practitioners and 2–3 person firms.",
+    price: "₹3,999",
+    per: "/ advocate / mo",
+    desc: "For solo practitioners and 2–3 person chambers.",
     features: [
       "Unlimited matters",
-      "Federal + 1 state library",
+      "Supreme Court + 1 High Court library",
       "Standard citators",
       "Email support",
     ],
@@ -91,11 +91,11 @@ const TIERS = [
   },
   {
     name: "Practice",
-    price: "$349",
-    per: "/ attorney / mo",
-    desc: "For litigation, transactional, and regulatory teams up to 50.",
+    price: "₹8,999",
+    per: "/ advocate / mo",
+    desc: "For litigation, corporate, and regulatory teams up to 50.",
     features: [
-      "All 50 states + federal libraries",
+      "All High Courts + Supreme Court libraries",
       "House-style training on your filings",
       "Verification across full opinions",
       "Matter isolation & audit log",
@@ -278,9 +278,9 @@ export default function Home() {
                     § LawGIQ · 4.2s
                   </div>
                   <div className="text-[13px] leading-[1.45] text-fg1">
-                    &ldquo;Under Cal. Civ. Code{" "}
-                    <span className="cite-chip">§ 1714(a)</span> every person owes a duty of
-                    ordinary care…&rdquo;
+                    &ldquo;Under{" "}
+                    <span className="cite-chip">S. 304A IPC</span>, liability attaches only where
+                    the negligence is gross or reckless…&rdquo;
                   </div>
                 </div>
               )}
@@ -330,7 +330,7 @@ export default function Home() {
                       className="text-[11px] leading-[1.5]"
                       style={{ color: "var(--ember-600)" }}
                     >
-                      Wilson v. Marek (2021) narrows the rule you cited.
+                      Kusum Sharma v. Batra Hospital (2010) narrows the rule you cited.
                     </div>
                   </div>
                 </div>
@@ -412,24 +412,24 @@ export default function Home() {
                 >
                   §
                 </span>
-                Supreme Court of California
+                Supreme Court of India
               </div>
               <h4
                 className="mb-3 text-[18px] leading-[1.3] tracking-[-0.01em]"
                 style={{ fontFamily: "var(--font-sans)", fontWeight: 600, color: "var(--fg1)" }}
               >
-                Elsner v. Uveges, 34 Cal. 4th 915 (2004)
+                Jacob Mathew v. State of Punjab, (2005) 6 SCC 1
               </h4>
               <p className="mb-4 text-[14px] leading-[1.6] text-fg2">
                 We hold that{" "}
                 <span className="hl-yellow">
-                  Cal-OSHA provisions may be admitted to establish a standard or duty of care
+                  to attract S. 304A IPC the negligence must be gross or reckless
                 </span>{" "}
-                in all negligence actions, not merely those brought by employees against their
-                employers.
+                — a mere error of judgment or want of ordinary care will not suffice for criminal
+                liability.
               </p>
               <div className="mb-5 flex flex-wrap gap-1.5">
-                {["9th Cir.", "2004", "Cited 14×"].map((tag) => (
+                {["Supreme Court", "2005", "Cited 240×"].map((tag) => (
                   <span
                     key={tag}
                     className="rounded-full border bg-bone px-2 py-0.5 text-[10px] text-fg3"
@@ -441,8 +441,8 @@ export default function Home() {
               </div>
               <div className="space-y-2 border-t pt-3" style={{ borderColor: "var(--border)" }}>
                 {[
-                  { n: "01", title: "Cal. Civ. Code § 1714(a)" },
-                  { n: "02", title: "Evid. Code § 669" },
+                  { n: "01", title: "S. 304A, IPC 1860" },
+                  { n: "02", title: "S. 80, IPC 1860" },
                 ].map((r) => (
                   <div key={r.n} className="flex items-center gap-3 py-1.5">
                     <span
@@ -519,7 +519,7 @@ export default function Home() {
             not seats.
           </h2>
           <p className="mt-5 text-[17px] leading-[1.6] text-fg2">
-            All tiers include unlimited matters, BYOK for Westlaw/Lexis, and SOC&nbsp;2 Type&nbsp;II controls.
+            All tiers include unlimited matters, BYOK for SCC Online and Manupatra, and SOC&nbsp;2 Type&nbsp;II controls.
           </p>
         </div>
 
@@ -612,7 +612,7 @@ export default function Home() {
             className="mx-auto mt-5 max-w-[520px] text-[17px] leading-[1.55]"
             style={{ color: "rgba(236,238,241,0.7)" }}
           >
-            14-day trial. No card required. Bring your own Westlaw or Lexis credentials.
+            14-day trial. No card required. Bring your own SCC Online or Manupatra credentials.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <button
